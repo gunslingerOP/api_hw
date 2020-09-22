@@ -16,8 +16,8 @@ const Home = () => {
     <div className="container">
       <Row gutter={20} >
       {data.map( (item, index)=> (
-      <Col xs={12} span={8}>
-        <a target="#" href={item.download_url}>
+      <Col key={index} xs={24} sm={12} md={8} >
+        <a key={index} target="#" href={item.download_url}>
         <Card
         key={index}
         hoverable
